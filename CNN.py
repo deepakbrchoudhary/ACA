@@ -65,7 +65,7 @@ for k in range(1):
 	model=Sequential()
 	model.add(Conv2D(128, 5, 5, activation='relu', input_shape=(45,45,1)))
 	model.add(MaxPooling2D(pool_size=(2, 2)))
-	#model.add(Conv2D(128, (5, 5), activation='relu'))
+	#model.add(Conv2D(128, (5, 5), activation='relu')) HI, How are You
 	#model.add(MaxPooling2D(pool_size=(2, 2)))
 	model.add(Flatten())
 	model.add(Dense(250,input_dim=128, kernel_initializer='normal', activation='relu'))
